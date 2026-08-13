@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentes Valorant</title>
+</head>
+<body>
+    <h1>Seu Agente é um Duelista</h1>
+    Qual seu Agente : <input type="text" name="#" id="agente">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var agente = window.document.getElementById(`agente`)
+            var res = window.document.getElementById(`res`)
+
+            var perso = String(agente.value)
+            res.innerHTML = `seu agente é ${perso}`
+
+         if (perso == "jett") {
+                res.innerHTML = `seu agente é ${perso},  e é duelista`
+            } else {
+                res.innerHTML = `seu agente é ${perso}  e nao é duelista`
+            }
+        }
+    </script>
+</body>
+</html>

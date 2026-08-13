@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+</head>
+<body>
+    <h1>Verificador de Cidadania</h1>
+    Nacionalidade: <input type="text" name="txtnal" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+        <!-- caixa para mostrar o resultado-->
+    </div>
+    
+    <script>
+       function verificar(){
+        var pais = window.document.getElementById(`pais`) // guarda a reposta do usuario
+        var res = window.document.getElementById(`res`) // cria uma caixa para mostrar os resultados
+
+        var nal = String(pais.value) // declara a resposta do usuario como string 
+        res.innerHTML = `seu pais é ${nal}` // diz qual pais o usuario digitou 
+        if ( nal == "brasileiro") { // se o usuario digitar brasileiro, ele vai receber a mensagem de que é brasileiro
+            res.innerHTML = ` Voce é brasileiro, tamo junto cá`
+        } else{ // se o usuario digitar qualquer outra nacionalidade, ele vai receber a mensagem de que é estrangeiro
+            res.innerHTML = `Voce não é brasileiro, voce é ${nal} e é estrangeiro`
+        }
+       }
+    </script>
+</body>
+</html>
