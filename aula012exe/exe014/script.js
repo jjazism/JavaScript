@@ -5,7 +5,7 @@ function verificar(){
       var res = document.querySelector(`div#res`)
 
       if (fano.value.length == 0 || Number(fano.value) > ano){
-        window.alert(`[ERROR]`)
+        window.alert(`[ERROR] ano invalido ca`)
       } else{
         var fsex = document.getElementsByName (`radsex`)
         var idade = ano - Number(fano.value)
