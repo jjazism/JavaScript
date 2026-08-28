@@ -15,4 +15,4 @@ if(pos == -1){
     console.log(`Numero  ${pos} encontrado`)
 }
 
-//"Um array é uma variável composta que tem vários elementos. Cada elemento é composto por seu valor e por uma chave (key) de identificação". 
+//"Um array é uma variável composta que tem vários elementos. Cada elemento é composto por seu valor e por uma chave (key) de identificação". 8
